@@ -7,23 +7,23 @@
  */
 
 function convertToRoman(num) {
-    let roman = "";
-    let repeat;
-    repeat = num / 1000;
-    roman = addRoman(roman, repeat, "M");
-    num = num % 1000;
+  let roman = "";
+  let repeat;
+  repeat = num / 1000;
+  roman = addRoman(roman, repeat, "M");
+  num = num % 1000;
 
-    repeat = num/900;
-    roman = addRoman(roman, repeat, "CM");
-    num = num % 900;
+  repeat = num/900;
+  roman = addRoman(roman, repeat, "CM");
+  num = num % 900;
 
-    repeat = num/500;
-    roman = addRoman(roman, repeat, "D");
-    num = num % 500;
+  repeat = num/500;
+  roman = addRoman(roman, repeat, "D");
+  num = num % 500;
 
-    repeat = num/400;
-    roman = addRoman(roman, repeat, "CD");
-    num = num % 400;
+  repeat = num/400;
+  roman = addRoman(roman, repeat, "CD");
+  num = num % 400;
 
     repeat = num/100;
     roman = addRoman(roman, repeat, "C");
